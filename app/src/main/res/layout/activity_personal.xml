@@ -1,0 +1,127 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.beta_0.personal"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/personal_background"
+        >
+        <TextView
+            android:id="@+id/verison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+
+            android:text="Beta_0"
+            android:textSize="20dp"
+
+            android:textColor="@color/royalblue"
+            />
+        <ImageView
+            android:id="@+id/personal_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/personal_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personal_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            android:text="Hi 大师兄 您已登陆！"
+            android:textSize="25dp"
+            android:textColor="@color/limegreen"
+
+            />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mylistview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+
+        android:divider="#D2691E"
+        android:dividerHeight="2px"
+
+        >
+    </ListView>
+
+    <!--底部传送门-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:id="@+id/Linlayout_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true">
+
+                <ImageButton
+                    android:id="@+id/personal_weather"
+                    android:src="@drawable/weather_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:gravity="center_horizontal"
+                    app:layout_marginTopPercent="27%h"
+                    app:layout_marginLeftPercent="10%w"
+                    >
+                </ImageButton >
+
+
+                <ImageButton
+                    android:id="@+id/personal_picture"
+                    android:src="@drawable/picture_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:gravity="center_horizontal"
+                    app:layout_marginTopPercent="30%h"
+                    app:layout_marginLeftPercent="47%w"
+                    >
+                </ImageButton >
+
+
+                <ImageButton
+                    android:id="@+id/personal_personal"
+                    android:src="@drawable/me_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:gravity="center_horizontal"
+                    app:layout_marginTopPercent="25%h"
+                    app:layout_marginLeftPercent="83%w"
+                    >
+                </ImageButton >
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
